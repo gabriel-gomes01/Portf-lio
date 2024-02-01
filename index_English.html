@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Gomes</title>
+
+
+  <!--Estilos, Bootstrap, JS e jQuery-->
+  <link rel="stylesheet" href="Projeto_CSS/index.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <!-- Nav Lateral -->
+  <nav class="navbar fixed-top" id="navbar">
+
+    <div class="container-fluid">
+
+      <button class="navbar-toggler bg-black bg-opacity-25 border-1" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon" style="color: black;"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="align-items: center;">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <img class="icons" src="Imagens\Navegadores\home.png" alt="">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">
+                <img class="icons" src="Imagens\Navegadores\iblue.png" alt="">
+                About
+              </a>
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#Conhecimentos">
+                <img class="icons" src="Imagens\Navegadores\notas.png" alt="">
+                Skills
+              </a>
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#Projetos">
+                <img class="icons" src="Imagens\Navegadores\home.png" alt="">
+                Projects
+              </a>
+            </li>
+
+            <li id="icon-baixo">
+              <a href="https://www.instagram.com/gabriel_gomesant/">
+                <i class='bx bxl-instagram'></i>
+              </a>
+              <a href="https://github.com/gabriel-gomes01">
+                <i class='bx bxl-github'></i>
+              </a>
+              <a href="https://www.linkedin.com/in/gabriel-gomes-4941bb151/">
+                <i class='bx bxl-linkedin-square'></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Nav Lateral -->
+
+  <!-- Nav Flutuante -->
+  <div id="icon-float" class="navbar fixed-top">
+    <div class="container-fluid">
+
+      <div class="col-6">
+        <input type="checkbox" id="Check-noite" class="col-6">
+
+        <i id="imagem-sol" onclick="noite()" class='bx bx-sun'></i>
+
+        <i id="imagem-lua" onclick="noite()" class='bx bx-moon'></i>
+      </div>
+
+      <div id="div-bandeira" class="col-6 bg-light">
+
+        <input type="checkbox" id="Check-idioma" class="col-6">
+
+        <a href="index.html"><img id="bandeira-br" src="Imagens\Navegadores\Brazil.png"></a>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Nav Flutuante -->
+
+  <!-- Corpo do Site -->
+  <main>
+
+    <!-- Painel de Animação -->
+    <div id="painel-inicial">
+
+      <!-- Div de Nuvens -->
+      <div id="nuvens" class="container">
+        <img class="nuvem" src="Imagens\Painel\clouds.png" alt="">
+        <img class="nuvem" src="Imagens\Painel\Nuvem Voadora.gif" alt="">
+        <img class="nuvem" src="Imagens\Painel\Nuvem 1.png" alt="">
+        <img class="nuvem" src="Imagens\Painel\Nuvem 2.png" alt="">
+      </div>
+      <!-- Div de Nuvens -->
+
+      <!-- Painel de Texto do Painel -->
+      <div class="container rounded dis" id="texto_painel">
+        <h1> Wellcome to my Portfolio </h1>
+        <br>
+        <h2>Create by - Gabriel Gomes</h2>
+      </div>
+      <!-- Painel de Texto do Painel -->
+
+    </div>
+    <!-- Painel de Animação -->
+
+    <!-- Div de Sobre -->
+    <section class="container " id="sobre">
+
+      <!-- Div de Texto Sobre -->
+      <div id="sobre-texto">
+        <h1 class="titulo">About</h1>
+
+        <p class="text-light text-sm-start text-break lh-sm">
+          My name is Gabriel Gomes, i'm <label id="i">0</label>, from Brazil. I get started in my profissional carrier
+          with 16 years on court of justice of my state for 2 years.
+          <br>
+          After this, i enter in a college named Faculdade São Salvador, in the curse of Analysis and Developed of
+          Systems, i studied for 3 years and I graduated.
+          anos.
+          <br>
+          I interned on another State Company, called FUNDAC, as Back-End programmer for 6 months.
+          <br>
+          I also was a Trainner DEV/ADM in a Jornal called Open Tecnologia for 3 months.
+          <br>
+          And i was a Condominium administrator for 1 month, by company GPersona.
+
+        </p>
+      </div>
+      <!-- Div de Texto Sobre -->
+
+      <!-- Div de Imagem Sobre -->
+      <div id="sobre-img">
+        <img src='Imagens\Index\Perfil_img.jpg'>
+      </div>
+      <!-- Div de Imagem Sobre -->
+
+    </section>
+    <!-- Div de Sobre -->
+
+    <!-- Div Conhecimento -->
+    <section id="Conhecimentos">
+      <h1 class="titulo">Skills</h1>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+
+
+        <!-- Card C-Sharp -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\c-sharp.png'>
+          </div>
+          <div class="content">
+            <h2>C-Sharp</h2>
+            <p>
+              This is my main language, i study for 2/3 years, i have a knowllege on frameworks <b>
+                Windows Forms, MVC</b> and I'm starting with <b> ASP.NET Core, e o Entity</b>.
+            </p>
+          </div>
+        </div>
+        <!-- Card C-Sharp -->
+
+        <!-- Card Java -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\java.png'>
+          </div>
+          <div class="content">
+            <h2>Java</h2>
+            <p>
+              I know Java from college, I have some projects with it and although it's not my main thing, I can develop
+              some projects. Because it's OOP, I can learn it easily.
+            </p>
+          </div>
+        </div>
+        <!-- Card Java -->
+
+        <!-- Card DataBase -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\DataBase.png'>
+          </div>
+          <div class="content">
+            <h2>DataBase</h2>
+            <p>
+              I have very extensive knowledge in Databases, I have already used some such as, <b>SQL Server, PostgreSQL
+                and
+                MySQL</b>, in addition to Back-End languages, I like to study Databases.
+            </p>
+
+          </div>
+        </div>
+        <!-- Card DataBase -->
+
+        <!-- Card Flutter -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\flutter.png'>
+          </div>
+          <div class="content">
+            <h2>Flutter</h2>
+            <p>
+              Flutter it's my first <b> mobile </b> platform. I have some projects with <b>Dart</b> and liked this
+              language. I did a course for 6 months and gained a lot of knowledge .
+            </p>
+          </div>
+        </div>
+        <!-- Card Flutter -->
+
+        <!-- Card JavaScript -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\js.png'>
+          </div>
+          <div class="content">
+            <h2>JavaScript</h2>
+            <p>
+              As I wanted to learn some other <b>WEB</b> language besides the MVC Framework, I started studying JS,
+              As it is something different from OOP languages, it caught my attention and I ended up liking it.
+            </p>
+          </div>
+        </div>
+        <!-- Card JavaScript -->
+
+        <!-- Card HTML5 -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\html-5.png'>
+          </div>
+          <div class="content">
+            <h2>HTML 5</h2>
+            <p>
+              <b> HTML, CSS</b> is mandatory for web development, I know how to use these languages well, with 2
+              projects
+              and some <b>Freelancer</b> jobs. In addition to some frameworks like <b> Bootstrap </b> and React .
+            </p>
+          </div>
+        </div>
+        <!-- Card HTML5 -->
+
+        <!-- Card Idiomas -->
+        <div class="card d-flex position-relative flex-column" id="imagem-conhecimento">
+          <div class='imgContainer'>
+            <img src='Imagens\Index\Idiomas.png'>
+          </div>
+          <div class="content">
+            <h2>Languages</h2>
+            <p>
+              <li>
+                Português - Fluent
+              </li>
+              <li>
+                Inglês - Intermedium
+              </li>
+            </p>
+          </div>
+        </div>
+        <!-- Card Idiomas -->
+
+    </section>
+    <!-- Div Conhecimento -->
+
+    <!-- Div Projetos -->
+    <section id="Projetos">
+
+      <h1 class="titulo">Projects</h1>
+
+      <div id="slide">
+
+        <!-- Radio Buttons sliders -->
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <!-- Radio Buttons sliders -->
+
+        <!-- Div Cards Sliders -->
+        <div class="cards">
+
+          <!-- Card 1 -->
+          <label class="card" for="item-1" id="song-1">
+            <img
+              src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+              alt="song">
+          </label>
+          <!-- Card 1 -->
+
+          <!-- Card 2 -->
+          <label class="card" for="item-2" id="song-2">
+            <img
+              src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+              alt="song">
+          </label>
+          <!-- Card 2 -->
+
+          <!-- Card 3 -->
+          <label class="card" for="item-3" id="song-3">
+            <img
+              src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+              alt="song">
+          </label>
+          <!-- Card 3 -->
+
+        </div>
+        <!-- Div Cards Sliders -->
+
+      </div>
+
+    </section>
+    <!-- Div Projetos -->
+
+  </main>
+  <!-- Corpo do Site -->
+
+  <!-- Footer -->
+  <footer id="div-footer">
+
+    <div id="div-personagem">
+      <img id="hornet" src="Gif\Hornet.gif">
+    </div>
+
+    <div id="div-chao">
+      <img id="chao" src="Imagens\Painel\Chao.png">
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- Link de Script -->
+  <script src="Bootstrap/js/bootstrap.js"></script>
+  <script defer src="Projeto_JS\script.js"></script>
+  <!-- Link de Script -->
+
+</body>
+
+</html>

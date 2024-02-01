@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Gomes</title>
+
+
+    <!--Estilos, Bootstrap, JS e jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+    <!-- Footer -->
+    <footer id="div-footer">
+
+        <div id="div-personagem">
+            <img id="hornet" src="Gif\Hornet.gif">
+        </div>
+
+        <div id="div-chao">
+            <img id="chao" src="Imagens\Painel\Chao.png">
+        </div>
+
+    </footer>
+    <!-- Footer -->
+
+    <style>
+        #div-footer {
+            overflow: hidden;
+            display: flow;
+            position: absolute;
+            height: 50vh;
+            width: 100vw;
+            background-color: red;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #div-personagem {
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        #hornet {
+            position: absolute;
+            height: 10em;
+            transform: scaleX(-1);
+            animation: hornet-move 10s infinite linear;
+        }
+
+        @keyframes hornet-move {
+            0% {
+                right: 100%;
+            }
+
+            100% {
+                right: -10%;
+            }
+        }
+
+        #div-chao {
+            position: absolute;
+            background-color: black;
+            height: 100%;
+            width: 100vw;
+        }
+
+        #chao{
+            display: flex;
+            width: 100vw;
+        }
+    </style>
+
+</body>
+
+</html>
