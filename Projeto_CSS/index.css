@@ -156,6 +156,7 @@ body img {
     src: url(https://db.onlinewebfonts.com/t/a831675….eot);
     background-color: #0000003f;
 }
+
 /*#endregion Texto do Painel*/
 
 /*#region Sobre */
@@ -475,16 +476,6 @@ body img {
 
     100% {
         right: -10%;
-    }
-}
-
-
-@media (max-width: 1300px) {
-    #hornet {
-        position: absolute;
-        height: 9rem;
-        transform: scaleX(-1);
-        animation: hornet-move 10s infinite linear;
     }
 }
 
