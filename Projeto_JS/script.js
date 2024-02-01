@@ -132,14 +132,3 @@ window.addEventListener("resize", () => {
     hornet.style = `bottom: ${ground}px;`
   }
 });
-
-/*function hornetGround() {
-
-  let hornet = document.getElementById("hornet");
-  let ground = document.getElementById("div-chao").offsetHeight;
-
-  hornet.style = `bottom: ${ground}px;`
-  console.log("Bottom eh " + ground)
-}
-
-hornetGround()*/

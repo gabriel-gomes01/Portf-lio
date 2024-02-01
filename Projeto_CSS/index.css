@@ -479,6 +479,16 @@ body img {
     }
 }
 
+
+@media (max-width: 1300px) {
+    #hornet {
+        position: absolute;
+        height: 9rem;
+        transform: scaleX(-1);
+        animation: hornet-move 10s infinite linear;
+    }
+}
+
 #div-chao {
     background-color: black;
     height: 50%;
