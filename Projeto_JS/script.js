@@ -115,10 +115,12 @@ document.querySelectorAll('div-bandeira').forEach(link => {
   }
 });
 
-let initialviewWidth = window.innerWidth;
-let initialviewHeight = window.innerHeight;
 
+//Função para a Hornet fixar no chão
+let initialviewWidth = window.innerWidth; //Largura da tela
+let initialviewHeight = window.innerHeight; //Altura da tela
 
+//Caso o tamanho da tela mude, o event listener vai mudar o tamanho do chão e o bottom da hornet
 window.addEventListener("resize", () => {
 
   let hornet = document.getElementById("hornet");
@@ -128,7 +130,5 @@ window.addEventListener("resize", () => {
 
   if (viewportHeight != initialviewHeight || viewportWidth != initialviewWidth) {
     hornet.style = `bottom: ${ground}px;`
-
-    console.log(ground)
   }
 });
