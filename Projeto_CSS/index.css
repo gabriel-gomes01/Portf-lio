@@ -381,25 +381,6 @@ body img {
 
 /*#endregion Nav*/
 
-/*#region Footer*/
-#contato {
-    display: flex;
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    background-image: image("Imagens\Painel\Chao.png");
-}
-
-#chao {
-    position: absolute;
-    bottom: 1px;
-    width: 100vw;
-    height: 25vh;
-    max-width: 100%
-}
-
-/*#endregion Footer*/
-
 /*#region icons*/
 
 #icon-baixo i {
@@ -445,7 +426,7 @@ body img {
 
 /*#endregion icons*/
 
-/*#region footer*/
+/*#region Footer*/
 #div-footer {
     overflow: hidden;
     display: flow;
@@ -460,6 +441,7 @@ body img {
 #div-personagem {
     height: 50%;
     width: 100%;
+    position: relative;
 }
 
 #hornet {
@@ -467,6 +449,7 @@ body img {
     height: 10rem;
     transform: scaleX(-1);
     animation: hornet-move 10s infinite linear;
+    bottom: 0px;
 }
 
 @keyframes hornet-move {
@@ -479,25 +462,17 @@ body img {
     }
 }
 
-
-@media (max-width: 1300px) {
-    #hornet {
-        position: absolute;
-        height: 9rem;
-        transform: scaleX(-1);
-        animation: hornet-move 10s infinite linear;
-    }
-}
-
 #div-chao {
-    background-color: black;
     height: 50%;
-    width: 100vw;
+    width: 100%;
 }
 
 #chao {
-    display: flex;
+    position: absolute;
+    bottom: 1px;
     width: 100vw;
+    height: 25vh;
+    max-width: 100%
 }
 
-/*#endregion footer*/
+/*#endregion Footer*/
